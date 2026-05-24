@@ -1,319 +1,220 @@
 # 😊 Sentiment Analysis Project using Machine Learning
 
+![Sentiment Analysis](sentiment%20pic.jpg)
+
+---
+
 ## 📖 About the Project
 
 This project is an end-to-end **Natural Language Processing (NLP)** and **Machine Learning** application that predicts whether a text review expresses a **Positive 😊** or **Negative 😞** sentiment.
 
-The project is built using the **IMDb 50K Movie Reviews Dataset** and focuses on converting unstructured text reviews into meaningful sentiment insights using Machine Learning.
+Built using the **IMDb 50K Movie Reviews Dataset**, it covers the complete workflow of a real-world ML project:
 
-It covers the complete workflow of a real-world ML project including:
-
-- Data Collection
-- Data Cleaning
-- Text Preprocessing
-- Exploratory Data Analysis
-- Feature Engineering
-- Model Building
-- Model Saving
-- Database Integration
-- Streamlit Web App Deployment
-
-This project demonstrates how customer reviews and feedback can be analyzed automatically to understand public opinion at scale.
+- 📦 Data Collection & Cleaning
+- 🧹 Text Preprocessing & EDA
+- ⚙️ Feature Engineering
+- 🤖 Model Building & Evaluation
+- 💾 Database Integration
+- 🌐 Streamlit Web App Deployment
 
 ---
 
-# 📌 Project Highlights
+## 📌 Project Highlights
 
-📂 **Dataset Size:** 50,000+ movie reviews analyzed  
-
-📝 **Records Processed:** 50K+ text reviews  
-
-⚖️ **Classification Type:** Binary Classification  
-(Positive / Negative)
-
-🧹 **Text Preprocessing Techniques:** 5+
-
-🤖 **Machine Learning Model Built:** 1
-
-🌐 **Interactive Web App:** Streamlit Dashboard
-
-💾 **Database Connected:** MySQL
-
-⚡ **Prediction Type:** Real-time sentiment prediction
+| 🏷️ Property | 📋 Detail |
+|-------------|-----------|
+| 📂 Dataset | IMDb 50,000 Movie Reviews |
+| ⚖️ Classification | Binary (Positive / Negative) |
+| 🥇 Best Model | Logistic Regression |
+| 🎯 Best Accuracy | **89.8%** |
+| 🌐 Web Framework | Streamlit |
+| 💾 Database | MySQL |
+| ⚡ Prediction | Real-time |
 
 ---
 
-# 🎯 Why This Project?
+## 🎯 Why This Project?
 
-Online platforms generate thousands of reviews daily. Reading and analyzing each review manually is difficult.
+Online platforms generate thousands of reviews daily. Reading and analyzing each review manually is time-consuming and inefficient.
 
-This project solves that problem by automatically classifying reviews into:
+This project solves that by automatically classifying reviews into ✅ **Positive** or ❌ **Negative** sentiment — helping businesses:
 
-✅ Positive  
-
-❌ Negative  
-
-This can help businesses:
-
-- Understand customer satisfaction
-- Monitor public sentiment
-- Analyze product feedback faster
-- Identify negative reviews quickly
-- Improve decision making using customer insights
+- 📈 Understand customer satisfaction
+- 🔍 Monitor public sentiment
+- ⚡ Analyze product feedback faster
+- 🚨 Identify negative reviews quickly
+- 💡 Improve decision making using data-driven insights
 
 ---
 
-# 📂 Project Workflow
+## 📂 Project Workflow
 
-## 1️⃣ Data Collection
-Collected **IMDb 50K Movie Reviews Dataset** for training and testing.
+### 1️⃣ Data Collection
+Collected the **IMDb 50K Movie Reviews Dataset** for training and testing.
 
----
-
-## 2️⃣ Data Cleaning
-Handled preprocessing tasks such as:
-
+### 2️⃣ Data Cleaning 🧹
 - Lowercasing
-- Removing punctuation
-- Removing stopwords
+- Removing HTML tags and punctuation
+- Removing stopwords (preserving negation words: `not`, `no`, `never`)
 - Tokenization
-- Lemmatization / Stemming
 
----
-
-## 3️⃣ Exploratory Data Analysis (EDA)
-Performed analysis on:
-
+### 3️⃣ Exploratory Data Analysis (EDA) 📊
 - Positive vs Negative review distribution
-- Most frequent words
-- Word clouds
-- Review length analysis
+- Word frequency analysis
+- Word clouds ☁️
+- Review length distribution
+
+### 4️⃣ Feature Engineering ⚙️
+Converted text into numerical format using **TF-IDF Vectorization**.
+
+### 5️⃣ Model Building & Comparison 🤖
+
+| 🤖 Model | 🎯 Accuracy | 📊 F1 Score |
+|----------|-------------|-------------|
+| Logistic Regression | **89.8%** ✅ | **90.0%** ✅ |
+| SVM | 89.5% | 89.6% |
+| Naive Bayes | 86.8% | 86.8% |
+
+### 6️⃣ Deployment 🚀
+Built an interactive **Streamlit** web app for real-time sentiment prediction.
 
 ---
 
-## 4️⃣ Feature Engineering
-Converted text data into numerical format using:
+## 🛠️ Tools & Libraries
 
-- **TF-IDF Vectorization**
-
----
-
-## 5️⃣ Model Building
-Built a Machine Learning classification model to predict sentiment from review text.
-
----
-
-## 6️⃣ Deployment
-Created a Streamlit web application where users can enter a review and instantly get sentiment prediction.
-
----
-
-# 🛠️ Tools & Libraries Used
-
-| Tool | Purpose |
-|------|---------|
-| Python | Programming |
-| Pandas | Data analysis |
-| NumPy | Numerical operations |
-| Matplotlib | Visualization |
-| Seaborn | Data visualization |
-| NLTK | NLP preprocessing |
-| Scikit-learn | Machine Learning |
-| Pickle | Model saving |
-| Streamlit | Web app |
-| MySQL | Database |
-| Jupyter Notebook | Model development |
+| 🔧 Tool | 📋 Purpose |
+|---------|-----------|
+| 🐍 Python | Programming |
+| 🐼 Pandas | Data analysis |
+| 🔢 NumPy | Numerical operations |
+| 📊 Matplotlib / Seaborn | Visualization |
+| 📝 NLTK | NLP preprocessing |
+| 🤖 Scikit-learn | Machine Learning |
+| 💾 Pickle | Model serialization |
+| 🌐 Streamlit | Web application |
+| 🗄️ MySQL | Database |
+| 📓 Jupyter Notebook | Model development |
 
 ---
 
-# 🔍 Project Objectives
+## ✨ Web App Features
 
-✅ Clean and preprocess text review data  
-
-✅ Perform sentiment classification using Machine Learning  
-
-✅ Predict Positive or Negative sentiment  
-
-✅ Store prediction history in MySQL database  
-
-✅ Build interactive Streamlit dashboard  
-
-✅ Deploy complete end-to-end ML project  
+✅ Enter any custom review text  
+🧹 Automatic text preprocessing  
+⚡ Instant Positive / Negative prediction  
+📊 Confidence score with progress bar  
+☁️ Word Cloud generation  
+💾 Prediction history saved to MySQL database  
+⬇️ Downloadable prediction history as CSV  
+🌗 Light / Dark theme toggle  
 
 ---
 
-# ✨ Key Findings
-
-## 🔑 Insights from Sentiment Analysis
-
-📌 **50,000+ reviews analyzed**
-
-📌 Positive words frequently found:
-- amazing
-- excellent
-- great
-- loved
-- awesome
-
-📌 Negative words frequently found:
-- bad
-- worst
-- boring
-- disappointing
-- terrible
-
-📌 Balanced sentiment distribution across reviews
-
-📌 Model can predict sentiment instantly from custom user input
-
-📌 Review history gets stored in MySQL database
-
----
-
-# 🚀 Capabilities Demonstrated
-
-🐍 Python Programming  
-
-📊 Data Analysis with Pandas & NumPy  
-
-🧹 Data Cleaning & Text Preprocessing  
-
-🔍 Natural Language Processing (NLP)  
-
-🤖 Machine Learning Model Training  
-
-📈 Data Visualization  
-
-💾 MySQL Database Integration  
-
-🌐 Streamlit Web App Development  
-
-📑 Project Documentation  
-
-🚀 End-to-End Machine Learning Deployment  
-
----
-
-# 💻 Features of Web App
-
-✅ User enters custom review text  
-
-✅ Automatic text preprocessing  
-
-✅ Instant sentiment prediction  
-
-✅ Positive / Negative output  
-
-✅ Confidence score display  
-
-✅ Prediction history saved in MySQL  
-
-✅ Interactive Streamlit dashboard  
-
----
-
-# 📊 Visualizations
-
-## 1) 😊 Positive vs Negative Review Distribution
-Bar chart showing sentiment counts.
-
-## 2) ☁️ Word Cloud
-Most common words in reviews.
-
-## 3) 📈 Review Length Analysis
-Distribution of review lengths.
-
-## 4) 🔤 Most Frequent Words
-Top recurring review words.
-
-## 5) 📊 Model Accuracy Analysis
-Performance of trained ML model.
-
----
-
-# 💡 Real-World Use Cases
-
-This project can be extended for:
-
-- Product Review Analysis
-- Customer Feedback Monitoring
-- Social Media Comment Analysis
-- Brand Reputation Tracking
-- Restaurant Review Analysis
-- Movie Review Classification
-- Survey Feedback Analysis
-- Hotel Review Analytics
-
----
-
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```bash
 Sentiment Analysis ML project/
 │
-├── app.py
-├── sentiment.ipynb
-├── requirements.txt
+├── 🐍 app.py                        # Streamlit web application
 │
-├── Database/
-│   └── db.py
+├── 📁 ML/
+│   ├── 🤖 model.pkl                 # Trained ML model
+│   └── ⚙️  vectorizer.pkl           # TF-IDF Vectorizer
 │
-├── ML/
-│   ├── model.pkl
-│   └── vectorizer.pkl
+├── 📁 Database/
+│   └── 🗄️  db.py                    # MySQL connection & insert logic
 │
-└── README.md
+├── 📁 Notebook/
+│   └── 📓 Sentiment_Analysis.ipynb  # Model training notebook
+│
+├── 📄 requirements.txt
+└── 📄 README.md
 ```
 
 ---
 
-# ▶️ Run Locally
+## ▶️ Run Locally
 
-## Clone Repository
-
+### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/sentiment-analysis-project.git
+git clone https://github.com/RaoUtkarshSingh/sentiment-analysis-project.git
+cd sentiment-analysis-project
 ```
 
-## Install Dependencies
-
+### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run Streamlit App
+### 3️⃣ Setup MySQL Database 🗄️
+```sql
+CREATE DATABASE sentiment_db;
 
+USE sentiment_db;
+
+CREATE TABLE predictions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    review TEXT,
+    cleaned TEXT,
+    prediction VARCHAR(20),
+    confidence FLOAT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Then update `Database/db.py` with your MySQL credentials:
+```python
+host="localhost",
+user="your_username",
+password="your_password",
+database="sentiment_db"
+```
+
+### 4️⃣ Generate Model Files (if not present) 🤖
+Run `Notebook/Sentiment_Analysis.ipynb` to generate `model.pkl` and `vectorizer.pkl`, then place them inside the `ML/` folder.
+
+### 5️⃣ Run the App 🚀
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-# 🤝 Contribution
+## 💡 Real-World Use Cases
 
-Contributions are welcome 🚀
-
-### Steps to contribute:
-
-1. Fork the repository  
-2. Create a branch  
-3. Make changes  
-4. Commit changes  
-5. Push changes  
-6. Open Pull Request  
+| 🏢 Industry | 📋 Use Case |
+|------------|------------|
+| 🛒 E-commerce | Product Review Analysis |
+| 🏨 Hospitality | Hotel & Restaurant Reviews |
+| 📱 Social Media | Comment Sentiment Tracking |
+| 🎬 Entertainment | Movie Review Classification |
+| 🏷️ Brand Management | Reputation Monitoring |
+| 📋 Research | Survey Feedback Analysis |
 
 ---
 
-# 📬 Contact
+## 🚀 Capabilities Demonstrated
 
-Feel free to connect for collaboration, feedback, or opportunities.
-
-📧 Email: utrajpatna1@email.com  
-
-💼 LinkedIn: www.linkedin.com/in/utkarsh-raj01  
-
-🐙 GitHub: https://github.com/RaoUtkarshSingh  
+🐍 Python Programming  
+📊 Data Analysis with Pandas & NumPy  
+🧹 Data Cleaning & Text Preprocessing  
+🔍 Natural Language Processing (NLP)  
+🤖 Machine Learning Model Training  
+📈 Data Visualization  
+💾 MySQL Database Integration  
+🌐 Streamlit Web App Development  
+📑 End-to-End ML Project Deployment  
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star on GitHub!
+## 📬 Contact
+
+Feel free to connect for collaboration, feedback, or opportunities!
+
+📧 **Email:** utrajpatna1@email.com  
+💼 **LinkedIn:** [linkedin.com/in/utkarsh-raj01](https://www.linkedin.com/in/utkarsh-raj01)  
+🐙 **GitHub:** [github.com/RaoUtkarshSingh](https://github.com/RaoUtkarshSingh)  
+
+---
+
+> ⭐ If you found this project useful, consider giving it a star on GitHub!
